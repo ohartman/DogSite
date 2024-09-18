@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { capitalizeFirstLetter } from "./utils.jsx";
+import Image from "./image";
 
 function Input() {
   const [inputValue, setInputValue] = useState("");
@@ -6,10 +8,6 @@ function Input() {
   const [displayValue, setDisplayValue] = useState("");
   const [dogUrl, setDogUrl] = useState("");
   const [error, setError] = useState("");
-
-  const capitalizeFirstLetter = (str) => {
-    return str.charAt(0).toUpperCase() + str.slice(1);
-  };
 
   const handleInputChange = (event) => {
     setInputValue(event.target.value);
@@ -60,14 +58,7 @@ function Input() {
       <div>
         {error && <p style={{ color: "red" }}>{error}</p>}{" "}
         {dogUrl && !error && (
-          <div>
-            <h3>Random Image of {displayValue}:</h3>{" "}
-            <img
-              src={dogUrl}
-              alt={`A random ${displayValue}`}
-              style={{ maxWidth: "300px", height: "auto" }}
-            />
-          </div>
+          <Image dogUrl={dogUrl} displayValue={displayValue} />
         )}
       </div>
     </div>
