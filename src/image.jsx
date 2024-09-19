@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 function Image({ dogUrl, displayValue }) {
   return (
@@ -12,5 +13,10 @@ function Image({ dogUrl, displayValue }) {
     </div>
   );
 }
+
+Image.propTypes = {
+  dogUrl: PropTypes.string.isRequired, // dogUrl must be a string and is required
+  displayValue: PropTypes.string.isRequired, // displayValue must be a string and is required
+};
 
 export default Image;
