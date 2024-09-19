@@ -8,6 +8,10 @@ on:
     branches:
       - main
 
+permissions:   # Add this section
+  security-events: write  # Needed to upload SARIF files
+  contents: read  # Needed to read repository contents
+
 jobs:
   lint:
     runs-on: ubuntu-latest
