@@ -1,0 +1,54 @@
+{
+  "version": "2.1.0",
+  "$schema": "http://json.schemastore.org/sarif-2.1.0-rtm.5",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "ESLint",
+          "informationUri": "https://eslint.org",
+          "rules": [],
+          "version": "9.10.0"
+        }
+      },
+      "artifacts": [
+        {
+          "location": {
+            "uri": "file:///Users/owenhartman/Desktop/React-Playground/eslint.config.js"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/owenhartman/Desktop/React-Playground/src/App.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/owenhartman/Desktop/React-Playground/src/image.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/owenhartman/Desktop/React-Playground/src/index.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/owenhartman/Desktop/React-Playground/src/input.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/owenhartman/Desktop/React-Playground/src/utils.jsx"
+          }
+        },
+        {
+          "location": {
+            "uri": "file:///Users/owenhartman/Desktop/React-Playground/vite.config.js"
+          }
+        }
+      ],
+      "results": []
+    }
+  ]
+}
