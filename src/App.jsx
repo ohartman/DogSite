@@ -5,7 +5,7 @@ import Input from "./input";
 export default function App() {
   return (
     <main>
-      Enter Dog Breed: Testing
+      Enter Dog Breed:
       <br></br>
       <Input />
     </main>
